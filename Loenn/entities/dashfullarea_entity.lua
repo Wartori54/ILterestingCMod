@@ -1,1 +1,1 @@
-local dashfullarea_entity = {}; dashfullarea_entity.name = "ILterestingCMod/DashfullAreaEntity"; dashfullarea_entity.depth = -8500; dashfullarea_entity.texture = "objects/ILterestingCMod/dashfullarea/idle00"; dashfullarea_entity.placements = {name = "normal"};return dashfullarea_entity;
+local dashfullarea_entity = {name = "ILterestingCMod/DashfullAreaEntity", depth = -8500, texture = "objects/ILterestingCMod/dashfullarea/idle00", placements = {name = "normal"}};return dashfullarea_entity;
