@@ -6,7 +6,7 @@ It has a simple module and an entity which allows infinite dashing in there.
 Its not much, i know, but IL is hard D:
 
 ## Building
-Requires `ildasm` from mono under linux.
+Requires `ilasm` from mono under linux.
 
 Just run the `buildil` script and you are good to go.
 
