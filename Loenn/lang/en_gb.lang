@@ -1,0 +1,4 @@
+mods.ILterestingCMod.name=ILteresting Celeste Mod
+
+# naming the entity
+entities.ILterestingCMod/DashfullAreaEntity.placements.name.normal=Dash Full Area
