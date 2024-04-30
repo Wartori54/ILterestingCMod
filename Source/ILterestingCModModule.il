@@ -49,24 +49,24 @@
 				instance default void '.ctor' () cil managed
 		{
 			.maxstack 3
-			IL_0000: ldstr "ILterestingCModModule"
-			IL_1001: ldc.i4.2 // LogLevel.Info
-			IL_2002: call void class [Celeste]Celeste.Mod.Logger::SetLogLevel(string, valuetype [Celeste]Celeste.Mod.LogLevel)
-			IL_3003: nop
-			IL_4004: ldc.i4.2 // LogLevel.Info
-			IL_4100: ldstr "ILterestingCMod"
-			IL_5004: ldstr "HI FROM IL IN CONSTRUCTOR!!!"
-			IL_6005: call void class [Celeste]Celeste.Mod.Logger::Log(valuetype [Celeste]Celeste.Mod.LogLevel, string, string)
-			IL_8007: ret
+			ldstr "ILterestingCModModule"
+			ldc.i4.2 // LogLevel.Info
+			call void class [Celeste]Celeste.Mod.Logger::SetLogLevel(string, valuetype [Celeste]Celeste.Mod.LogLevel)
+			nop
+			ldc.i4.2 // LogLevel.Info
+			ldstr "ILterestingCMod"
+			ldstr "HI FROM IL IN CONSTRUCTOR!!!"
+			call void class [Celeste]Celeste.Mod.Logger::Log(valuetype [Celeste]Celeste.Mod.LogLevel, string, string)
+			ret
 		}
 
 		.method public virtual hidebysig
 		        instance default void Load () cil managed
 		{
 		    .maxstack 1
-			IL_0000: ldstr "HII FROM LOAD!!!"
-			IL_0001: call void class [mscorlib]System.Console::WriteLine(string)
-			IL_0002: ret
+			ldstr "HII FROM LOAD!!!"
+			call void class [mscorlib]System.Console::WriteLine(string)
+			ret
 
 		}
 
@@ -74,9 +74,9 @@
 		        instance default void Unload () cil managed
 		{
 		    .maxstack 1
-			IL_0000: ldstr "Oh this is boooring, bye!!!"
-			IL_0001: call void class [mscorlib]System.Console::WriteLine(string)
-			IL_0002: ret
+			ldstr "Oh this is boooring, bye!!!"
+            call void class [mscorlib]System.Console::WriteLine(string)
+			ret
 		}
 	}
 }
