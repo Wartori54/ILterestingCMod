@@ -18,10 +18,6 @@
 {
   .ver 0:11:4:0
 }
-.assembly extern MMHOOK_Celeste
-{
-  .ver 0:0:0:0
-}
 .assembly extern FNA
 {
   .ver 23:3:0:0
@@ -33,6 +29,22 @@
 .assembly extern System.Console
 {
   .ver 7:0:0:0
+}
+.assembly extern System.Linq.Expressions
+{
+  .ver 7:0:0:0
+}
+.assembly extern mscorlib
+{
+  .ver 7:0:0:0
+}
+.assembly extern netstandard
+{
+  .ver 2:0:0:0
+}
+.assembly extern Hydrogen
+{
+  .ver 1:0:0:0
 }
 .assembly 'ILterestingCMod'
 {
@@ -48,7 +60,8 @@
 		.method public hidebysig specialname rtspecialname
 				instance default void '.ctor' () cil managed
 		{
-			.maxstack 3
+			ldarg.0
+			call instance void [Celeste]Celeste.Mod.EverestModule::'.ctor'()
 			ldstr "ILterestingCModModule"
 			ldc.i4.2 // LogLevel.Info
 			call void class [Celeste]Celeste.Mod.Logger::SetLogLevel(string, valuetype [Celeste]Celeste.Mod.LogLevel)
@@ -66,6 +79,7 @@
 		    .maxstack 1
 			ldstr "HII FROM LOAD!!!"
 			call void class [mscorlib]System.Console::WriteLine(string)
+			call void class Celeste.Mod.ILterestingCMod.Entities.JumpAccumulatorEntity::LoadHooks()
 			ret
 
 		}
@@ -76,6 +90,7 @@
 		    .maxstack 1
 			ldstr "Oh this is boooring, bye!!!"
             call void class [mscorlib]System.Console::WriteLine(string)
+			call void class Celeste.Mod.ILterestingCMod.Entities.JumpAccumulatorEntity::UnloadHooks()
 			ret
 		}
 	}

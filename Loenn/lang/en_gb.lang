@@ -2,3 +2,4 @@ mods.ILterestingCMod.name=ILteresting Celeste Mod
 
 # naming the entity
 entities.ILterestingCMod/DashfullAreaEntity.placements.name.normal=Dash Full Area
+entities.ILterestingCMod/JumpAccumulatorEntity.placements.name.normal=Jump Accumulator

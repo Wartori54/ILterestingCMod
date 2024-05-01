@@ -1,0 +1,17 @@
+#!/bin/bash
+CELESTERELPATH="../celeste_mods/_celestemodgame/"
+ilverify \
+-r /usr/share/dotnet/shared/Microsoft.NETCore.App/8.0.3/mscorlib.dll \
+-r /usr/share/dotnet/shared/Microsoft.NETCore.App/8.0.3/System.Private.CoreLib.dll \
+-r /usr/share/dotnet/shared/Microsoft.NETCore.App/8.0.3/System.Runtime.dll \
+-r /usr/share/dotnet/shared/Microsoft.NETCore.App/8.0.3/System.Console.dll \
+-r /usr/share/dotnet/shared/Microsoft.NETCore.App/8.0.3/System.Linq.Expressions.dll \
+-r /usr/share/dotnet/shared/Microsoft.NETCore.App/8.0.3/System.Collections.dll \
+-r /usr/share/dotnet/shared/Microsoft.NETCore.App/8.0.3/netstandard.dll \
+-r "$CELESTERELPATH/Celeste.dll" \
+-r "$CELESTERELPATH/FNA.dll" \
+-r "$CELESTERELPATH/MonoMod.Utils.dll" \
+-r "$CELESTERELPATH/MonoMod.RuntimeDetour.dll" \
+-r "$CELESTERELPATH/Mono.Cecil.dll" \
+#-r "$CELESTERELPATH/Mods/Hydrogen/bin/Hydrogen.dll" \
+bin/ilmod.dll

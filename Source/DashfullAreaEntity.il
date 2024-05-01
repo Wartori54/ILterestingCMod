@@ -8,7 +8,7 @@
         = ( 
         01 00 // Prolog: mandatory 
         01 00 00 00 // A single arg
-        22 // string 22 bytes
+        22 // string 34 bytes (in hex, remember)
         49 4c 74 65 72 65 73 74 69 6e 67 43 4d 6f 64 2f 44 61 73 68 66 75 6c 6c 41 72 65 61 45 6e 74 69 74 79 // the string
         // The above string "ILterestingCMod/DashfullAreaEntity"
         00 00 // Named atributes: none
@@ -23,8 +23,6 @@
             instance default void '.ctor' (class [Celeste]Celeste.EntityData data,
             valuetype [FNA]Microsoft.Xna.Framework.Vector2 offset) cil managed
         {
-            .maxstack 5
-
             // Step 1, call the base constructor
             ldarg.0 // this
             ldarg data
